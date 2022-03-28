@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nicole Soeng | Portfolio</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/9aabcada1d.js" crossorigin="anonymous"></script>      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/pageIcon2.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+        <link id="style1" rel="stylesheet" href="styles/style.css">
+        <link rel="alternate stylesheet" media="(prefers-color-scheme: dark)" href="styles/myWebsiteDark.css">
+    </head>
+    <body>
+        <header class="navBar" id="navBar">
+            <nav>
+                <div class="toggleLightDark">
+                    <i class="far fa-sun"></i>
+                    <i class="far fa-moon"></i>
+                </div>
+                <a class="hamburger">
+                    <i class="fa fa-bars" id="fabars"></i>
+                    <i class="fas fa-times" id="fabarsClose"></i>
+                </a>
+                <ul id="navMenu" class="navMenu">
+                    <li><a class="navItem" href="#about">about</a></li>
+                    <li><a class="navItem" href="#skills">skills</a></li>
+                    <li><a class="navItem" href="#portfolio">portfolio</a></li>
+                    <li><a class="navItem" href="extras/Resume-NicoleSoeng.pdf" target="_blank">resume</a></li>
+                    <li><a class="navItem" href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section id="about">
+                <aside class="profilePic">
+                        <img id="profilePic" src="images/nicoleSoeng3.png" alt="Nicole Soeng">
+                        <div id="picName">Nicole Soeng</div>
+                        <div id="picTitle">Front End Web Developer</div>                
+                    <div class="iconBar">
+                        <a href="mailto:nicole.soeng@outlook.com"><img class="icon" src="images/emailIcon.png" alt="Email Icon"></a>
+                        <a href="https://www.linkedin.com/in/nicole-soeng-05784710" target="_blank"><img class="icon" src="images/LI-In-Bug.png" alt="LinkedIn Icon"></a>
+                        <a href="extras/Resume-NicoleSoeng.pdf" target="_blank"><img class="icon" src="images/cv-icon-4.jpg" alt="CV Icon"></a>
+                        <a href="https://github.com/nicoleSoeng" target="_blank"><img class="icon" src="images/GitHub-icon.png" alt="GitHub Icon"></a>
+                    </div>
+                </aside>
+                <div class="bio">
+                <h2>Biography</h2>
+                <p>I am a front end web developer, currently living in Virginia Beach, VA. 
+                I have a passion for working with clients to help them build interactive websites and applications.
+                </p> 
+                </div>
+                <div class="edu">
+                <ul class="education"> 
+                    <li class="eduheader">Education</li>
+                    <li class="degree"> <i class="fas fa-graduation-cap"></i>Web Development Certification with MEAN Stack, 2022</li>
+                        <ul class="school">
+                            <li>Texas A&M International University</li>
+                        </ul>
+                    <li class="degree"><i class="fas fa-graduation-cap"></i>Masters in Public Administration, 2011</li>
+                        <ul class="school">
+                            <li>University of Washington Evans School of Public Affairs</li>
+                        </ul>
+                </ul>
+                </div>
+            </section>
+            <section id="skills">
+                <ul class="skillContainer"><h2 id="skillHeader">Skills</h2>
+                    <li id="skill1"><i class="skillIcon fab fa-js-square"></i>
+                    <ul class="skill">
+                        <li class="skillList">Javascript</li>
+                    </ul></li>
+                    <li id="skill2"><i class="skillIcon fab fa-html5"></i>
+                        <ul class="skill">
+                            <li class="skillList">HTML5</li>
+                        </ul></li>
+                    <li id="skill3"> <i class="skillIcon fab fa-css3-alt"></i>
+                        <ul class="skill">
+                            <li class="skillList">CSS3</li>
+                        </ul></li>
+                </ul>
+            </section>
+            <section id="portfolio">
+                <div class="portfolioContainer">
+                    <h2 id="portfolioHeader">Portfolio</h2>
+                <!-- <div class="container"> -->
+                <!-- <a id="petWashSite" href="/personalProjects/petWash/petWash.html" target="_blank"><img class="portfolioSite" src="images/barryPetWash.png" alt="Barry's Pet Wash"></a> -->
+                <a id="mathGameSite" href="https://nicolesoeng.github.io/Math-Munchies/" target="_blank"><img class="portfolioSite" src="images/MathMunchies.jpg" alt="Math Munchies Game"></a>
+                <!-- <div class="overlay">
+                    <div class="text">
+                        Barry's Pet Wash
+                    </div>
+                </div> -->
+            <!-- </div> -->
+                </div>
+            </section>
+        <footer id="contact">
+            <div id="formContainer">
+            <form id="form" action="https://formsubmit.co/d4251b8ad9b99fb9c6f8a4b9502ac394" method="POST">
+               <h2>Contact</h2>
+               <input name="name" type="text" placeholder="Full Name" id="formName" required><br>
+               <input name="email" type="text" placeholder="Email"id="formEmail" required><br>
+               <textarea name="textarea" placeholder="Message" id="formMessage" rows="5" required></textarea><br>
+               <button id= "btnsubmit" type="submit" name="submit" value="Send">Send</button>
+            </form>
+            </div>
+            <p>Copyright &copy; Nicole Soeng <span id="date"></span></p>
+        </footer>
+        <a href="#about" class="scroll-link top-link" id="topLink">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script src="scripts/myWebsite.js"></script>
+    </body>
+</html>

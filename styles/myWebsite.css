@@ -1,0 +1,354 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: 100;
+}
+
+/* styles nav bar content */
+nav {
+  width: 100%;
+  /* height: 60px; */
+  border-width: 2.5px;
+  border-style:outset;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: rgba(157,146,169,.5); */
+  background-color: rgb(243, 240, 240,.2);
+  /*background-image: url(images/beige-tiles.png);
+  background-repeat: no-repeat;
+  background-size: 100%;*/
+}
+
+
+.navBar {
+  position: sticky;
+  height: 60px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav li {
+  display: inline;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul {
+  text-align: right;
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+nav a:link, a:visited {
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul a:hover, a:focus {
+  color: rgb(0, 0, 0);
+  font-weight: bold; 
+}
+
+#fabars {
+  display: none;
+  /* margin-right: 5px;
+  display: block;
+  float: right;
+  font-size: 28pt; */
+}
+
+/*styles name in top nav bar*/
+#Name {
+  float: left; 
+  font-size: 24px; 
+  font-weight: 100;
+  padding-left: 100px;
+}
+/* styles logo on nav bar */
+#logo {
+  float:left;
+  filter: grayscale(50%);
+  width: 50px;
+  height: auto;
+}
+
+/* styles aside with profile pic and icons */
+aside.profilePic {
+  position: relative;
+  padding-top: 15px;
+  width: 300px;
+  height: 550px;
+  float: left;
+  text-align: center;
+  margin: 0px 50px;
+  z-index: 0;
+}
+
+/* styles text under profile pic */
+.profilePic p {
+  font-size: 24pt;
+}
+
+/* styles profile picture */
+#profilePic {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  width:300px;
+  height: auto;
+  border-radius: 50%;
+}
+/*styles icons under profile pic*/
+
+.iconBar {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon {
+  filter: grayscale(80%);
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  width: 50px;
+  height: 50px;
+}
+
+.icon:hover, .icon:focus {
+  width: 60px;
+  height: 60px;
+}
+
+/* styles main content area */
+
+/*styles education area in about section*/
+
+.fas {
+  color: rgb(146, 155, 149);
+  font-size: 30px;
+  float: left;
+  padding-right: 10px;
+}
+
+.education {
+  list-style-type: none;
+  display: grid;
+}
+
+.eduheader {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  padding-top: 100px;
+}
+.degree {
+  font-weight: bold;
+}
+.school {
+  list-style-type: none;
+  padding-bottom: 30px;
+  padding-left: 55px;
+}
+
+/*styles sections*/
+
+.skillContainer {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "h h h"
+                       "O T Th";
+  height: 100%;
+  padding-left: 0;
+}
+
+#skillHeader {
+  grid-area: h;
+}
+
+.fab {
+  color: rgb(46, 46, 46);
+  font-size: 75px;
+  padding-bottom: 10px;
+  /* display: inline-block; */
+}
+
+.JS, .HTML, .CSS {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.skillList {
+  text-align: center;
+  list-style-type: none;
+  font-size: 1.25rem;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+#skills ul li {
+  list-style-type: none;
+}
+
+section {
+  text-align: center;
+}
+
+#skill1 {
+  grid-area: O;
+  /* display: inline-block; */
+}
+
+#skill2 {
+  grid-area: T;
+  /* display: inline-block; */
+}
+
+#skill3 {
+  grid-area: Th;
+  /* display: inline-block; */
+}
+
+#skills, #resume {
+  /* position: relative; */
+  /* background-color: rgba(227, 233, 229, 1); */
+  /* background-color: rgb(146, 155, 149); */
+  background-color: rgb(190, 202, 194);
+  background-size: 100%;
+  height: auto;
+}
+
+#skills, #resume, #portfolio {
+  padding: 15px 75px 50px 75px;
+  scroll-margin-top: 80px;
+}
+#about, #portfolio {
+  /* position: relative; */
+  background-color: white;
+  background-size: 100%;
+}
+
+#about {
+  text-align: left;
+  padding: 15px 200px 100px 75px;
+  scroll-margin-top: 100px;
+}
+
+#skills {
+  clear: left;
+}
+
+/*styles links*/
+.portfolioLinks {
+  width: 100%;
+  height: 600px;
+}
+
+.portfolioSite {
+  float: left;
+}
+
+#portfolio a, #resume a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#portfolio a:link, #resume  a:link {
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+  }
+
+  #portfolio a:hover a:focus, #resume  a:hover, a:focus {
+  color: rgba(128,150,150,1);
+}
+
+/*styles main content text*/
+h2 {
+  font-size: 30pt;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 16pt;
+}
+
+/* styles footer content */
+footer {
+  background-color: rgb(83, 81, 81); 
+  color: white; 
+  padding: 10pt;
+}
+
+ @media screen and (max-width: 800px) {
+  .topnav a {display: none;}
+  
+  #fabars {
+    display: block;
+    margin-right: 5px;
+    float: right;
+    font-size: 28pt;
+  }
+}
+
+@media screen and (max-width: 800px) {
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(243, 240, 240, .8); ;
+}
+
+
+aside.profilePic {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about, #skills, #portfolio, #resume {
+  padding: 20px 20px;
+  scroll-margin-top: 360px;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+  .topnav.responsive a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  }
+
+nav li a {
+  border-bottom: 2px solid gray;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .portfolioSite {
+    width: 100%;
+    height: auto;
+  }
+}
+  
+  /* nav li {
+      display: hidden;
+      padding: 14px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+   } */
