@@ -1,5 +1,5 @@
-### Hi there 👋
-I am a junior frontend developer. I have an interest in developing responsive websites using HTML5, CSS3 and JavaScript.
+### About me
+I am a junior frontend web developer. I have an interest in developing responsive websites using HTML5, CSS3 and JavaScript.
 <!--
 **nicoleSoeng/nicoleSoeng** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
