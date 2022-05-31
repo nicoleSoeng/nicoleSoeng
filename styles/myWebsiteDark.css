@@ -315,15 +315,16 @@ body {
     padding-left: 0;
   }
   
-  .skillList {
+  .skillList li {
     text-align: center;
     list-style-type: none;
     font-size: 1.25rem;
     padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
     font-weight: bold;
-    width: 70px;
+    width: 75px;
+  }
+  .skillList {
+    font-weight: bold;
   }
   
   #skills ul li {
@@ -464,7 +465,9 @@ body {
                          "b b b b"
                          "e e e e"
   }
-
+    #skills {
+      background-image: none;
+    }
     h2 {
       text-align: center;
     }
