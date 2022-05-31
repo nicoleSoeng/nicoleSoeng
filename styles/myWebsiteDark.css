@@ -273,9 +273,9 @@ body {
   
   .skillContainer {
     display: flex;
-    list-style-type: none;
+    /* list-style-type: none; */
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     height: 100%;
     padding-left: 0;
@@ -285,14 +285,30 @@ body {
   
   #skillHeader {
     width: 100%;
+    font-weight: bold;
+  }
+  .skillContainer li {
+    list-style-type: none;
+    margin: 0 auto;
+    flex-basis: 33.33333%;
+    font-size: 1.5rem;
   }
   
   .skillIcon {
+    display: block;
+    margin: 10px auto;
     color: rgb(46, 46, 46);
     font-size: 75px;
-    padding-bottom: 10px;
+    /* padding: 0px 30px 10px 30px; */
+    width: 75px;
+    height: 70px;
   }
-  
+
+  /* .fa-php {
+    width: 95px;
+    height: 70px;
+  } */
+
   .skill {
     list-style-type: none;
     text-align: center;
@@ -306,6 +322,8 @@ body {
     padding-bottom: 25px;
     padding-right: 25px;
     padding-left: 25px;
+    font-weight: bold;
+    width: 70px;
   }
   
   #skills ul li {
