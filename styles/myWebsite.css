@@ -1,109 +1,219 @@
+/* MAIN CONTENT AND SECTION STYLES */
+
 body {
-  font-family: Arial, Helvetica, sans-serif; 
-  font-weight: 100;
-}
+    display: grid;
+    grid-template-areas: "n n n n n n"
+                         "a a a a . ."
+                         "a a a a . ."
+                         "s s s s s s"
+                         "p p p p p p"
+                         "c c c c c c";
+    /* font-family: Arial, Helvetica, sans-serif;  */
+    font-family: 'Hubballi', cursive;
+    font-weight: 100;
+    margin: 0;
+    background-color: rgb(252, 251, 248);
+    color:rgb(46, 46, 46);
+    box-sizing: border-box;
+  }
 
-/* styles nav bar content */
-nav {
-  width: 100%;
-  /* height: 60px; */
-  border-width: 2.5px;
-  border-style:outset;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: rgba(157,146,169,.5); */
-  background-color: rgb(243, 240, 240,.2);
-  /*background-image: url(images/beige-tiles.png);
-  background-repeat: no-repeat;
-  background-size: 100%;*/
-}
+  h2 {
+    font-size: 30pt;
+    font-weight: 100;
+  }
+  
+  p {
+    font-size: 18pt;
+  }
+
+  section {
+    text-align: center;
+    padding: 15px 50px 50px 75px;
+  }
 
 
-.navBar {
-  position: sticky;
-  height: 60px;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
 
-nav li {
-  display: inline;
-  width: 100%;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 18px;
-}
+  #about {
+    grid-area: a;
+    display: grid;
+    grid-template-areas: "i i b b b b"
+                         "i i e e e e";
+    text-align: left;
+    padding: 25px 50px 50px 75px;
+    scroll-margin-top: 100px;
+  }
 
-nav ul {
-  text-align: right;
-  margin-right: 50px;
-  list-style-type: none;
-}
+  #about p {
+    max-width: 800px;
+  }
 
-nav a:link, a:visited {
-  font-weight: normal;
-  color: black;
-  text-decoration: none;
-}
+  #skills, #portfolio, footer {
+    scroll-margin-top: 50px;
+  }
 
-nav ul a:hover, a:focus {
-  color: rgb(0, 0, 0);
-  font-weight: bold; 
-}
+  #skills {
+    grid-area: s;
+    clear: left;
+    /* background-color:rgb(149, 177, 182); */
+    background: rgba(149, 177, 182, .8) url("../images/leavesBackground.png");
+    background-size: 100%;
+    background-attachment: fixed;
+  }
 
-#fabars {
-  display: none;
-  /* margin-right: 5px;
-  display: block;
-  float: right;
-  font-size: 28pt; */
-}
+  #portfolio {
+    grid-area: p;
+  }
 
-/*styles name in top nav bar*/
-#Name {
-  float: left; 
-  font-size: 24px; 
-  font-weight: 100;
-  padding-left: 100px;
-}
-/* styles logo on nav bar */
-#logo {
-  float:left;
-  filter: grayscale(50%);
-  width: 50px;
-  height: auto;
-}
+  footer {
+    grid-area: c;
+    background-color: rgb(149, 177, 182, .8);
+    padding: 10pt;
+    text-align: center;
+  }
 
-/* styles aside with profile pic and icons */
-aside.profilePic {
-  position: relative;
-  padding-top: 15px;
-  width: 300px;
-  height: 550px;
-  float: left;
-  text-align: center;
-  margin: 0px 50px;
-  z-index: 0;
-}
+  /* NAV BAR STYLES*/
+  nav {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    background-color: rgb(252, 251, 248);
+  }
+  
+  .navBar {
+    grid-area: n;
+    /* position: sticky; */
+    height: 60px;
+    background-color:transparent;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
-/* styles text under profile pic */
-.profilePic p {
-  font-size: 24pt;
-}
+  }
 
+  .fixed-nav {
+    position: sticky;
+    background-color:rgb(252, 251, 248);
+  }
+
+  nav ul li {
+    display: inline;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  nav li a {
+    padding: 20px;
+  }
+  
+  nav ul {
+    text-align: right;
+    /* margin-right: 50px; */
+    list-style-type: none;
+  }
+  
+  nav a:link, a:visited {
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+  }
+  
+  nav ul a:hover, a:focus {
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    text-decoration: 4px rgb(149, 177, 182) underline;
+  }
+
+  .hoverLink {
+    text-decoration: 4px rgb(149, 177, 182) underline;
+  }
+  
+  .hamburger {
+    display: none;
+    background-color: rgb(252, 251, 248);
+    font-size: 1.5rem;
+  }
+
+  /*NAV arrow*/
+  .top-link {
+    font-size: 1.25rem;
+    text-decoration: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    color:rgb(46, 46, 46);
+    /* background-color:rgb(149, 177, 182); */
+    display: grid;
+    place-items: center;
+    border-radius: 2px;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
+
+  .show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* styles light/dark toggle icons */
+
+  .fa-sun {
+    display: none;
+    font-size: 30px;
+    margin-left: 15px;
+    /* margin-top: 10px; */
+    float: left;
+  }
+
+  .fa-moon {
+    display: block;
+    font-size: 30px;
+    margin-left: 15px;
+    /* margin-top: 10px; */
+    float: left;
+  }
+  
+  /* ABOUT SECTION STYLES */
+
+  /* styles aside with profile pic and icons */
+
+  aside.profilePic {
+    grid-area: i;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin: 0px 50px;
+    z-index: 0;
+  }
+  
 /* styles profile picture */
 #profilePic {
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-  width:300px;
+  width:80%;
   height: auto;
   border-radius: 50%;
 }
-/*styles icons under profile pic*/
 
+/*styles icons under profile pic*/
 .iconBar {
   display: block;
   margin-right: auto;
@@ -111,244 +221,364 @@ aside.profilePic {
 }
 
 .icon {
-  filter: grayscale(80%);
+  /* filter: grayscale(80%); */
   margin-right: 7.5px;
   margin-left: 7.5px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
-
-.icon:hover, .icon:focus {
-  width: 60px;
-  height: 60px;
-}
-
-/* styles main content area */
-
-/*styles education area in about section*/
-
-.fas {
-  color: rgb(146, 155, 149);
-  font-size: 30px;
-  float: left;
-  padding-right: 10px;
-}
-
-.education {
-  list-style-type: none;
-  display: grid;
-}
-
-.eduheader {
-  font-size: 1.5rem;
-  padding-bottom: 15px;
-  padding-top: 100px;
-}
-.degree {
-  font-weight: bold;
-}
-.school {
-  list-style-type: none;
-  padding-bottom: 30px;
-  padding-left: 55px;
-}
-
-/*styles sections*/
-
-.skillContainer {
-  display: grid;
-  list-style-type: none;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "h h h"
-                       "O T Th";
-  height: 100%;
-  padding-left: 0;
-}
-
-#skillHeader {
-  grid-area: h;
-}
-
-.fab {
-  color: rgb(46, 46, 46);
-  font-size: 75px;
-  padding-bottom: 10px;
-  /* display: inline-block; */
-}
-
-.JS, .HTML, .CSS {
-  list-style-type: none;
-  text-align: center;
-  padding-left: 0;
-}
-
-.skillList {
-  text-align: center;
-  list-style-type: none;
-  font-size: 1.25rem;
-  padding-bottom: 25px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
-#skills ul li {
-  list-style-type: none;
-}
-
-section {
-  text-align: center;
-}
-
-#skill1 {
-  grid-area: O;
-  /* display: inline-block; */
-}
-
-#skill2 {
-  grid-area: T;
-  /* display: inline-block; */
-}
-
-#skill3 {
-  grid-area: Th;
-  /* display: inline-block; */
-}
-
-#skills, #resume {
-  /* position: relative; */
-  /* background-color: rgba(227, 233, 229, 1); */
-  /* background-color: rgb(146, 155, 149); */
-  background-color: rgb(190, 202, 194);
-  background-size: 100%;
-  height: auto;
-}
-
-#skills, #resume, #portfolio {
-  padding: 15px 75px 50px 75px;
-  scroll-margin-top: 80px;
-}
-#about, #portfolio {
-  /* position: relative; */
-  background-color: white;
-  background-size: 100%;
-}
-
-#about {
-  text-align: left;
-  padding: 15px 200px 100px 75px;
-  scroll-margin-top: 100px;
-}
-
-#skills {
-  clear: left;
-}
-
-/*styles links*/
-.portfolioLinks {
-  width: 100%;
-  height: 600px;
-}
-
-.portfolioSite {
-  float: left;
-}
-
-#portfolio a, #resume a {
-  font-size: 24px;
-  text-decoration: none;
-}
-
-#portfolio a:link, #resume  a:link {
-    font-weight: normal;
-    color: black;
-    text-decoration: none;
+  /* styles text under profile pic */
+  #picName {
+    font-size: 1.75rem;
+    margin: 10px;
+  }
+  #picTitle {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
   }
 
-  #portfolio a:hover a:focus, #resume  a:hover, a:focus {
-  color: rgba(128,150,150,1);
-}
+  /*styles bio area in about section */
+  .bio {
+    grid-area: b;
+  }
 
-/*styles main content text*/
-h2 {
-  font-size: 30pt;
-  font-weight: 100;
-  padding-bottom: 10px;
-}
-
-p {
-  font-size: 16pt;
-}
-
-/* styles footer content */
-footer {
-  background-color: rgb(83, 81, 81); 
-  color: white; 
-  padding: 10pt;
-}
-
- @media screen and (max-width: 800px) {
-  .topnav a {display: none;}
+  /*styles education area in about section*/
+  .edu {
+    grid-area: e;
+  }
+  .fa-graduation-cap {
+    color: rgb(149, 177, 182);
+    font-size: 30px;
+    float: left;
+    padding-right: 10px;
+  }
   
-  #fabars {
-    display: block;
-    margin-right: 5px;
-    float: right;
-    font-size: 28pt;
+  .education {
+    list-style-type: none;
+    display: grid;
   }
-}
-
-@media screen and (max-width: 800px) {
-body {
-  margin: 0;
-}
-
-nav {
-  background-color: rgb(243, 240, 240, .8); ;
-}
-
-
-aside.profilePic {
-  display: block;
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#about, #skills, #portfolio, #resume {
-  padding: 20px 20px;
-  scroll-margin-top: 360px;
-}
-
-h2 {
-  text-align: center;
-}
-
-
-  .topnav.responsive a {
-  display: block;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 18px;
+  
+  .eduheader {
+    font-size: 1.75rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
 
-nav li a {
-  border-bottom: 2px solid gray;
-}
+  .degree {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
 
-}
-
-@media screen and (max-width: 600px) {
-  .portfolioSite {
+  .school {
+    list-style-type: none;
+    padding-bottom: 30px;
+    padding-left: 55px;
+    font-size: 1.25rem;
+  }
+  
+  /*SKILL SECTION STYLES*/
+  
+  /* .skillContainer {
+    display: grid;
+    grid-template-areas: ;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 15px;
+  } */
+  
+  
+  .skillContainer {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  
+  #skillHeader {
     width: 100%;
+  }
+  .skillContainer li {
+    list-style-type: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    flex-basis: 33.33333%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .skillIcon {
+    display: block;
+    margin: 10px auto 5px auto;
+    color: rgb(46, 46, 46);
+    font-size: 75px;
+    width: 75px;
+    height: 70px;
+  }
+
+  /* .fa-php {
+    width: 95px;
+    height: 70px;
+  } */
+
+  .skill {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .skillList li {
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.25rem;
+    padding-bottom: 25px;
+    /* font-weight: bold; */
+    width: 75px;
+  }
+  .skillList {
+    font-weight: bold;
+  }
+  #skills ul li {
+    list-style-type: none;
+  }
+  
+  
+  /* PORTFOLIO SECTION STYLES */
+  .portfolioContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
     height: auto;
   }
-}
+
+
+  #portfolioHeader {
+      width: 100%;
+  }
   
-  /* nav li {
-      display: hidden;
-      padding: 14px;
+  .portfolioSite {
+    flex: 1;
+    width: 25%;
+    border-radius: 25px;
+  }
+  
+  #portfolio a {
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  #portfolio a:link {
+      font-weight: normal;
+      color: black;
       text-decoration: none;
-      font-size: 18px;
     }
-   } */
+
+    #skills, #portfolio, footer {
+      scroll-margin-top: 50px;
+    }
+    
+  
+  /* FOOTER STYLES */
+
+  #formName {
+    width: 50%;
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #formEmail {
+    width: 50%;
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #formMessage {
+    width: 50%;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #formContainer {
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.5rem;
+    background-color: rgb(252, 251, 248);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  @media screen and (max-width: 1200px) {
+    #about, #skills, #portfolio {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  } 
+
+  @media screen and (max-width: 800px) {
+    body {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-areas: "n n n n"
+                           "a a a a"
+                           "a a a a"
+                           "a a a a"
+                           "s s s s"
+                           "p p p p"
+                           "c c c c";
+    }
+    #about {
+      margin: 0;
+      display: grid;
+      grid-template-areas: "i i i i"
+                           "b b b b"
+                           "e e e e"
+    }
+    #skills {
+      background-image: none;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    .hamburger {
+      /* color:rgb(46, 46, 46); */
+      display: block;
+      /* position: fixed; */
+      z-index: 100;
+      /* top: 1rem;
+      right: 1rem; */
+      padding: 5px;
+      padding-right: 10px;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .navMenu {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      /* padding-right: 30px; */
+      margin-top: 60px;
+      transform: translateY(-200%);
+      /* transition: transform 0.3s; */
+      /* top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; */
+      z-index: 99;
+      background-color: rgb(252, 251, 248);
+      /* background: rgb(232, 238, 240); */
+      /* border-radius: 5px; */
+      width: auto;
+      list-style: none;
+      /* padding-top: 4rem; */
+    }
+    
+    #fabars {
+      display: block;
+      color:rgb(46, 46, 46);
+      /* padding-right: 15px; */
+      margin-right: 5px;
+      float: right;
+      font-size: 28pt;
+    }
+
+    #fabarsClose {
+      display: none;
+      color: rgb(46, 46, 46);
+      /* margin-right: 5px; */
+      /* padding-right: 15px; */
+      margin-right: 5px;
+      float: right;
+      font-size: 28pt;
+    }
+    .fa-sun, .fa-moon {
+      padding-top: 10px;
+    }
+    /* nav ul {
+      padding-top: 40px;
+    } */
+
+    .navMenu li a {
+      display: block;
+      font-size: 1.25rem;
+      padding-right: 15px;
+      padding-right: 30px;
+      padding-bottom: 15px;
+    }
+  
+    nav ul a:hover, a:focus {
+      text-decoration: 4px rgb(149, 177, 182) underline;
+    }
+
+    .showMenu {
+      transform: translateY(0);
+    }
+    #about {
+      padding: 10px 20px 20px 20px;
+    }
+    #skills, #portfolio, #resume {
+      padding: 10px 20px 20px 20px;
+    }
+    .eduheader {
+      text-align: center;
+    }
+    .education {
+      padding: 10px;
+    }
+    .fa-graduation-cap {
+      padding-bottom: 10px;
+    }
+    aside.profilePic {
+      border-bottom: 1px solid gray;
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .portfolioSite {
+      width: 50%;
+      height: auto;
+    }
+
+    #formName, #formEmail {
+      width: 90%;
+      height: 25px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    #formMessage {
+      width: 90%;
+      height: 100px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .portfolioSite {
+      width: 75%;
+      height: auto;
+    }
+  }
+  
