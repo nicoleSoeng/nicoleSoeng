@@ -244,7 +244,6 @@ body {
     font-size: 30px;
     float: left;
     padding-right: 10px;
-    padding-bottom: 20px;
   }
   
   .education {
@@ -274,41 +273,38 @@ body {
   
   .skillContainer {
     display: flex;
-    /* list-style-type: none; */
+    list-style-type: none;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     height: 100%;
     padding-left: 0;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
   
   #skillHeader {
     width: 100%;
-    font-weight: bold;
   }
+  
   .skillContainer li {
     list-style-type: none;
     margin: 0 auto;
+    margin-bottom: 20px;
     flex-basis: 33.33333%;
     font-size: 1.5rem;
+    text-align: center;
   }
+
   
   .skillIcon {
     display: block;
-    margin: 10px auto;
+    margin: 10px auto 5px auto;
     color: rgb(46, 46, 46);
     font-size: 75px;
-    /* padding: 0px 30px 10px 30px; */
     width: 75px;
     height: 70px;
   }
-
-  /* .fa-php {
-    width: 95px;
-    height: 70px;
-  } */
 
   .skill {
     list-style-type: none;
@@ -321,11 +317,12 @@ body {
     list-style-type: none;
     font-size: 1.25rem;
     padding-bottom: 25px;
-    font-weight: bold;
+    /* font-weight: bold; */
     width: 75px;
   }
   .skillList {
     font-weight: bold;
+    /* padding-bottom: 25px; */
   }
   
   #skills ul li {
@@ -336,10 +333,11 @@ body {
   /* PORTFOLIO SECTION STYLES */
   .portfolioContainer {
     display: flex;
-    flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* width: 100%; */
+    flex-direction: row;
+    height: auto;
   }
 
   #portfolioHeader {
@@ -347,11 +345,9 @@ body {
   }
   
   .portfolioSite {
-    /* flex: 1; */
-    width: auto;
-    height: 300px;
+    flex: 1;
+    width: 25%;
     border-radius: 25px;
-    padding: 10px;
   }
   
   #portfolio a {
@@ -432,12 +428,8 @@ body {
   button {
     font-size: 1.5rem;
     background-color: rgb(252, 251, 248);
-       color: rgb(46, 46, 46);
-      font-family: 'Hubballi', cursive;
-    font-weight: 100;
     border-radius: 5px;
     cursor: pointer;
-    -webkit-appearance: none;
   }
 
   @media screen and (max-width: 1200px) {
@@ -466,13 +458,22 @@ body {
                          "b b b b"
                          "e e e e"
   }
-   #skills {
-     background-image: none;
-   }
+  #skills {
+    background-image: none;
+  }
     h2 {
       text-align: center;
     }
-
+    .eduheader {
+      text-align: center;
+    }
+    .education {
+      padding: 10px;
+    }
+    .fa-graduation-cap {
+      padding-bottom: 10px;
+    }
+    
     .hamburger {
       color: rgb(232, 238, 240);
       display: block;
