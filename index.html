@@ -2,134 +2,215 @@
 <html lang="en">
     <head>
         <meta charset= "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="google-site-verification" content="Zi8hajO5sGMoTyIyKidX3_AS4HGuFwwKyGORX9UPR44" />
         <title>Nicole Soeng | Portfolio</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://kit.fontawesome.com/9aabcada1d.js" crossorigin="anonymous"></script>      
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/owl.carousel.min.css">
+        <link rel="stylesheet" href="styles/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="images/pageIcon2.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-        <link id="style1" rel="stylesheet" href="styles/style.css">
-        <link rel="alternate stylesheet" media="(prefers-color-scheme: dark)" href="styles/myWebsiteDark.css">
     </head>
     <body>
-        <header class="navBar" id="navBar">
-            <nav>
-                <div class="toggleLightDark">
-                    <i class="far fa-sun"></i>
-                    <i class="far fa-moon"></i>
+        <section id="nav-bar">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#">Nicole Soeng</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a href="#about" class="nav-link js-scroll-trigger">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">education</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#skills">skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" target="_blank" href="extras/Resume-NicoleSoeng.pdf">resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+        <div class="hero container-fluid padding">
+            <div class="col-12">
+                <!-- <img src="images/heroBG.jpg"> -->
+            </div>
+            <div class="row">
+            <div class="col-12">
+                    <h1>Hi, I'm Nicole.</h1>
+                <div class="h2-container">
+                <div class="typed-container">
+                <div class="typed-out">
+                    <h2>I'm a Front End Web Developer.</h2>
                 </div>
-                <a class="hamburger">
-                    <i class="fa fa-bars" id="fabars"></i>
-                    <i class="fas fa-times" id="fabarsClose"></i>
-                </a>
-                <ul id="navMenu" class="navMenu">
-                    <li><a class="navItem" href="#about">about</a></li>
-                    <li><a class="navItem" href="#skills">skills</a></li>
-                    <li><a class="navItem" href="#portfolio">portfolio</a></li>
-                    <li><a class="navItem" href="extras/Resume-NicoleSoeng.pdf" target="_blank">resume</a></li>
-                    <li><a class="navItem" href="#contact">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-            <section id="about">
-                <aside class="profilePic">
-                        <img id="profilePic" src="images/nicoleSoeng3.png" alt="Nicole Soeng">
-                        <div id="picName">Nicole Soeng</div>
-                        <div id="picTitle">Front End Web Developer</div>                
-                    <div class="iconBar">
-                        <a href="mailto:nicole.soeng@outlook.com"><img class="icon" src="images/emailIcon.png" alt="Email Icon"></a>
-                        <a href="https://www.linkedin.com/in/nicole-soeng-05784710" target="_blank"><img class="icon" src="images/LI-In-Bug.png" alt="LinkedIn Icon"></a>
-                        <a href="extras/Resume-NicoleSoeng.pdf" target="_blank"><img class="icon" src="images/cv-icon-4.jpg" alt="CV Icon"></a>
-                        <a href="https://github.com/nicoleSoeng" target="_blank"><img class="icon" src="images/GitHub-icon.png" alt="GitHub Icon"></a>
-                    </div>
-                </aside>
-                <div class="bio">
-                <h2>Biography</h2>
-                <p>I am a front end web developer, currently living in Virginia Beach, VA. 
-                I have a passion for working with clients to help them build interactive websites and applications.
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <section id="about" class="fade-in about">
+            <div class="container padding">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img id="profilePic" src="images/nicoleSoeng3.png">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                <h1>About Me</h1>
+                <p>I have a passion for creating user-friendly, asthetically pleasing websites. 
+                I'll help you design a responsive, interactive website that showcases your unique brand. I will work with you to make sure you are happy with the final product.
                 </p> 
                 </div>
-                <div class="edu">
-                <ul class="education"> 
-                    <li class="eduheader">Education &amp; Certifications</li>
-                    <li class="degree"> <i class="fas fa-graduation-cap"></i>HTML5 Application Development Fundamentals, May 2022</li>
-                        <ul class="school">
-                            <li>Microsoft Certification</li>
-                        </ul>
-                    <li class="degree"> <i class="fas fa-graduation-cap"></i>Web Development Certification, March 2022</li>
-                        <ul class="school">
-                            <li>Texas A&M International University</li>
-                        </ul>
-                    <li class="degree"><i class="fas fa-graduation-cap"></i>Masters in Public Administration, June 2011</li>
-                        <ul class="school">
-                            <li>University of Washington Evans School of Public Affairs</li>
-                        </ul>
-                </ul>
+            </div>
+        </section>
+      
+        <section id="education" class="fade-in education">
+            <div class="container padding">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h1>Education &amp; Certifications</h1>
                 </div>
-            </section>
-            <section id="skills">
-                <ul class="skillContainer"><h2 id="skillHeader">Skills</h2>
-                    <li id="skill1"><i class="skillIcon fab fa-js-square"></i>
+                <div class="col-lg-6 col-md-6">
+                    <ul class="educationList"> 
+                        <li class="degree"> <i class="fas fa-graduation-cap"></i>HTML5 Application Development Fundamentals, May 2022</li>
+                            <ul class="school">
+                                <li>Microsoft Certification</li>
+                            </ul>
+                        <li class="degree"> <i class="fas fa-graduation-cap"></i>Web Development Certification, March 2022</li>
+                            <ul class="school">
+                                <li>Texas A&M International University</li>
+                            </ul>
+                        <li class="degree"><i class="fas fa-graduation-cap"></i>Masters in Public Administration, June 2011</li>
+                            <ul class="school">
+                                <li>University of Washington Evans School of Public Affairs</li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+
+        <section class="fade-in" id="skills">
+            <ul class="skillContainer"><h1 id="skillHeader">Skills</h1>
+                <li class="skillIconText" id="skill1"><i class="skillIcon fab fa-js-square"></i>
+                <ul class="skill">
+                    <li class="skillList">Javascript, jQuery</li>
+                </ul></li>
+                <li class="skillIconText" id="skill2"><i class="skillIcon fab fa-html5"></i>
                     <ul class="skill">
-                        <li class="skillList">Javascript, jQuery</li>
+                        <li class="skillList">HTML5</li>
                     </ul></li>
-                    <li id="skill2"><i class="skillIcon fab fa-html5"></i>
-                        <ul class="skill">
-                            <li class="skillList">HTML5</li>
-                        </ul></li>
-                    <li id="skill3"> <i class="skillIcon fab fa-css3-alt"></i>
-                        <ul class="skill">
-                            <li class="skillList">CSS3</li>
-                        </ul></li>
-                    <li id="skill4"> <i class="skillIcon fa-brands fa-php"></i>
-                         <ul class="skill">
-                             <li class="skillList">PHP</li>
-                         </ul></li>
-                     <li id="skill5"> <img id="sqlIcon" class="skillIcon" src="images/sql.png" alt="sqlIcon"></i>
-                          <ul class="skill">
-                               <li class="skillList">SQL</li>
-                          </ul></li>
-                     <li id="skill6"> <i class="skillIcon fa-brands fa-git-square"></i>
-                           <ul class="skill">
-                                <li class="skillList">Git, Github</li>
-                           </ul></li>
-                </ul>
-            </section>
-            <section id="portfolio">
-                <div class="portfolioContainer">
-                    <h2 id="portfolioHeader">Portfolio</h2>
-                <!-- <div class="container"> -->
-                <!-- <a id="petWashSite" href="/personalProjects/petWash/petWash.html" target="_blank"><img class="portfolioSite" src="images/barryPetWash.png" alt="Barry's Pet Wash"></a> -->
-                <a id="hairSalonSite" href="https://nicolesoeng.github.io/hair-salon/" target="_blank"><img class="portfolioSite" src="images/hairSolutions.png" alt="Hair Salon Site"></a>
-                <a id="nonProfitSite" href="https://nicolesoeng.github.io/nonprofit-site/" target="_blank"><img class="portfolioSite" src="images/nonProfit.png" alt="Nonprofit Site"></a>
-                <a id="mathGameSite" href="https://nicolesoeng.github.io/Math-Munchies/" target="_blank"><img class="portfolioSite" src="images/MathMunchies.png" alt="Math Munchies Game"></a>
-                <!-- <div class="overlay">
-                    <div class="text">
-                        Barry's Pet Wash
+                <li class="skillIconText" id="skill3"> <i class="skillIcon fab fa-css3-alt"></i>
+                    <ul class="skill">
+                        <li class="skillList">CSS3, Bootstrap</li>
+                    </ul></li>
+                <li class="skillIconText" id="skill4"> <i class="skillIcon fa-brands fa-php"></i>
+                     <ul class="skill">
+                         <li class="skillList">PHP</li>
+                     </ul></li>
+                 <li class="skillIconText" id="skill5"> <img id="sqlIcon" class="skillIcon" src="images/sql.png" alt="sqlIcon"></i>
+                      <ul class="skill">
+                           <li class="skillList">SQL</li>
+                      </ul></li>
+                 <li class="skillIconText" id="skill6"> <i class="skillIcon fa-brands fa-git-square"></i>
+                       <ul class="skill">
+                            <li class="skillList">Git, Github</li>
+                       </ul></li>
+            </ul>
+        </section>
+        <section id="portfolio" class="fade-in">
+            <h1 id="portfolioHeader">Portfolio</h1>
+            <div class="portfolioContainer">
+            <div class="owl-carousel owl-theme">
+                <div class="ms-2 me-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <a id="hairSalonSite" href="https://nicolesoeng.github.io/hair-salon/" target="_blank"><img class="card-img-top portfolioSite" src="images/hairSolutions.png" alt="Hair Salon Site"></a>
+                        <h5 class="card-title">Hair Salon Webite</h5>
+                        Hair salon website designed with HTML5, CSS3 and Javascript.
                     </div>
-                </div> -->
-            <!-- </div> -->
                 </div>
-            </section>
-        <footer id="contact">
+                </div>
+                <div class="ms-2 me-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <a id="navyRecruitSite" href="https://nicolesoeng.github.io/NavyOfficerRecruitment/" target="_blank"><img class="card-img-top portfolioSite" src="images/navyRecruitSite.png" alt="Navy Recruitment Site"></a>
+                        <h5 class="card-title">Navy Recruitment Site</h5>
+                        Navy recruiting site utilizing the Bootstrap framework.
+                    </div>
+                </div>
+                </div>
+                <div class="ms-2 me-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <a id="nonProfitSite" href="https://nicolesoeng.github.io/nonprofit-site/" target="_blank"><img class="card-img-top portfolioSite" src="images/nonProfit.png" alt="Nonprofit Site"></a>
+                        <h5 class="card-title">Non-Profit Home Page</h5>
+                        Sample homepage for a non-profit site with HTML5, CSS3 and Javascript.
+                    </div>
+                </div>
+                </div>
+                <div class="ms-2 me-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <a id="mathGameSite" href="https://nicolesoeng.github.io/Math-Munchies/" target="_blank"><img class="card-img-top portfolioSite" src="images/MathMunchies.png" alt="Math Munchies Game"></a>
+                        <h5 class="card-title">Elementary Math Game</h5>
+                        Javascript-coded math game that generates random math problems.
+                    </div>
+                </div>   
+                </div>         
+        </div>    
+        </div>
+        </section>
+        <footer class="text-center" id="contact">
             <div id="formContainer">
             <form id="form" action="https://formsubmit.co/d4251b8ad9b99fb9c6f8a4b9502ac394" method="POST">
-               <h2>Contact</h2>
+               <h1 id="contactHeader">Contact</h1>
                <input name="name" type="text" placeholder="Full Name" id="formName" required><br>
                <input name="email" type="text" placeholder="Email"id="formEmail" required><br>
                <textarea name="textarea" placeholder="Message" id="formMessage" rows="5" required></textarea><br>
                <button id= "btnsubmit" type="submit" name="submit" value="Send">Send</button>
             </form>
             </div>
-            <p>Website developed by Nicole Soeng, updated <span id="date"></span></p>
+            <ul class="contact-icons">
+                <li class="contact-icon">
+                    <a target="_blank" href="mailto:nicole.soeng@outlook.com"><i class="contactIcon fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="contact-icon">
+                    <a target="_blank" href="https://www.linkedin.com/in/nicole-soeng/"><i class="contactIcon fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="contact-icon">
+                    <a target="_blank" href="https://github.com/nicoleSoeng/"><i class="contactIcon fa-brands fa-github"></i></a>
+                </li>
+            </ul>
         </footer>
-        <a href="#about" class="scroll-link top-link" id="topLink">
-            <i class="fas fa-arrow-up"></i>
-        </a>
-        <script src="scripts/myWebsite.js"></script>
+        <section class="text-center date">
+        <p>Nicole Soeng, Last Updated <span id="date"></span></p>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="scripts/owl.carousel.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="https://kit.fontawesome.com/9aabcada1d.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+});
+        </script>
     </body>
 </html>
