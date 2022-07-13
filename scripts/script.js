@@ -68,38 +68,3 @@ appearOptions);
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
-
-//Nav-Bar Close on Link Click//
-const navLinks = document.querySelectorAll('.nav-link')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
-const navToggler = document.querySelector('.navbar-toggler')
-const navbarNav = document.getElementById('navbarNav')
-
-// $('.navbar-nav>li>a').on('click', function(){
-//     $('.navbar-collapse').collapse('hide');
-// });
-
-// document.navLinks.forEach(item => {
-//     item.addEventListener('click', () => {
-//         navbarNav.collapse('hide')
-//     })
-// });
-
-//     navToggler.on("click", function () {
-//         navMain.collapse('show');
-//     });
-
-// $(function(){ 
-//     var navMain = $("#navbarNav");
-//     navMain.on("click", "a", null, function () {
-//         navMain.collapse('hide');
-//     });
-// });
-
-// $('.navbar-collapse').on('click', function () {
-//     $('.navbarNav').addClass('navbar-toggler');
-//   });
-  
-//   $( '.navbarNav a' ).on("click", function(){
-//     $('.navbarNav').removeClass('navbar-toggler');
-//   });
