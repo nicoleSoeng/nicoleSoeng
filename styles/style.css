@@ -528,7 +528,7 @@ button {
     }
 
     .card-img-top {
-        height: 30vh;
+        height: 40vh;
         width: 80%;
     }
     #contact {
@@ -563,7 +563,7 @@ button {
 }
 
 .card-img-top {
-    height: 28vh;
+    height: 24vh;
     width: 100%;
     object-fit: cover;
     padding-bottom: 10px;
