@@ -222,7 +222,7 @@ button {
     list-style-type: none;
     margin: 0 auto;
     margin-bottom: 20px;
-    flex-basis: 33.33333%;
+    flex-basis: 25%;
     font-size: 1.25rem;
     text-align: center;
   }
