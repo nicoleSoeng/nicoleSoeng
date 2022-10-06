@@ -550,6 +550,9 @@ button {
         scroll-margin-top: 290px;
     }
 
+    .skillContainer li {
+      flex-basis: 50%;
+    }
 }
 
 .card-img-top {
